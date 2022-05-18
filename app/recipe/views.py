@@ -24,6 +24,7 @@ class TagViewSet(viewsets.GenericViewSet,
         """Create a new ingredient"""
         serializer.save(user=self.request.user)
 
+
 class IngredientViewSet(viewsets.GenericViewSet,
                         mixins.ListModelMixin,
                         mixins.CreateModelMixin):
